@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularz</title>
 </head>
+
 <body>
-    <form action="">
+    <form action="https://formspree.io/13grabek@wp.pl" method="POST">
+        <select name="select">
+            <option value="value1" selected>Pan</option>
+            <option value="value2">Pani</option>
+        </select>
+        <label for="imie">Imię:</label>
+        <input type="text" name="imie" id="imie" />
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" name="nazwisko" id="nazwisko" />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <label for="nrtelefonu">Nr telefonu:</label>
+        <input type="tel" name="nrtelefonu" id="nrtelefonu" />
+        <br />
+        <label for="wiadomosc">Wiadomość:</label>
+        <textarea maxlength="1000" name="wiadomosc" id="wiadomosc"></textarea>
+        <br />
         <input type="submit" value="Wyślij" />
     </form>
 </body>
+
 </html>
